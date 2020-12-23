@@ -1,0 +1,3 @@
+include ':easyandroidid'
+include ':app'
+rootProject.name = "AndroidIdRecreateApp"
