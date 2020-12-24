@@ -1,74 +1,61 @@
 package com.androididrecreate.easyandroidid;
 
-import android.media.Rating;
-import android.view.SurfaceView;
-import android.view.TextureView;
+
 import android.view.View;
-import android.view.ViewParent;
-import android.view.ViewStub;
-import android.webkit.WebView;
 import android.widget.Button;
-import android.widget.CalendarView;
-import android.widget.CheckBox;
-import android.widget.FrameLayout;
-import android.widget.GridLayout;
-import android.widget.GridView;
-import android.widget.HorizontalScrollView;
 import android.widget.ImageButton;
 import android.widget.ImageView;
-import android.widget.LinearLayout;
-import android.widget.ListView;
-import android.widget.ProgressBar;
-import android.widget.RadioButton;
-import android.widget.RadioGroup;
-import android.widget.RatingBar;
-import android.widget.RelativeLayout;
-import android.widget.ScrollView;
-import android.widget.SearchView;
-import android.widget.SeekBar;
-import android.widget.Space;
-import android.widget.Spinner;
-import android.widget.Switch;
-import android.widget.TableLayout;
-import android.widget.TableRow;
 import android.widget.TextView;
-import android.widget.ToggleButton;
-import android.widget.Toolbar;
-import android.widget.VideoView;
 
-import androidx.cardview.widget.CardView;
-import androidx.constraintlayout.helper.widget.Flow;
-import androidx.constraintlayout.helper.widget.Layer;
-import androidx.constraintlayout.utils.widget.ImageFilterButton;
-import androidx.constraintlayout.utils.widget.ImageFilterView;
-import androidx.constraintlayout.utils.widget.MockView;
-import androidx.constraintlayout.widget.Barrier;
-import androidx.constraintlayout.widget.ConstraintLayout;
-import androidx.constraintlayout.widget.Group;
-import androidx.core.widget.NestedScrollView;
-import androidx.viewpager.widget.ViewPager;
-
-import com.google.android.material.appbar.AppBarLayout;
-import com.google.android.material.bottomappbar.BottomAppBar;
-import com.google.android.material.bottomnavigation.BottomNavigationItemView;
-import com.google.android.material.bottomnavigation.BottomNavigationMenu;
-import com.google.android.material.bottomnavigation.BottomNavigationView;
-import com.google.android.material.chip.Chip;
-import com.google.android.material.chip.ChipGroup;
-import com.google.android.material.floatingactionbutton.FloatingActionButton;
-import com.google.android.material.navigation.NavigationView;
-import com.google.android.material.tabs.TabItem;
-import com.google.android.material.tabs.TabLayout;
-
-import org.w3c.dom.Text;
-
+/**
+ * this is the android ui class
+ */
 public class AndroidUISamClass {
 
+    /**
+     * this is for easy texview referencing
+     * @param id
+     * @param v
+     * @return
+     */
     public TextView getTv(int id, View v) {
+        TextView tv = v.findViewById(id);
+        return tv;
+    }
+
+    /**
+     * this is for easy ImageView
+     * @param id
+     * @param v
+     * @return
+     */
+    public ImageView getImg(int id, View v) {
+        return v.findViewById(id);
+
+    }
+
+    /**
+     * this is for easy button
+     * @param id
+     * @param v
+     * @return
+     */
+    public Button getBut(int id, View v) {
         return v.findViewById(id);
     }
 
-    public ImageView getImg(int id, View v) {
+    /**
+     * This is for easy ImageButton
+     * @param id
+     * @param v
+     * @return
+     */
+    public ImageButton getImgBut(int id, View v) {
+        return v.findViewById(id);
+    }
+
+
+    /*public ImageView getImg(int id, View v) {
         return v.findViewById(id);
 
     }
@@ -298,5 +285,5 @@ public class AndroidUISamClass {
     public GridView getGridVie(int id, View v) {
         return v.findViewById(id);
     }
-
+*/
 }
